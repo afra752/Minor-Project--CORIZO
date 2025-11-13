@@ -1,0 +1,153 @@
+/* ======== GLOBAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(187, 134, 252, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc;
+    margin-bottom: 30px;
+}
+
+/* ======== FORM ======== */
+.form {
+    display: grid;
+    gap: 15px;
+    background: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(187, 134, 252, 0.2);
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    color: #bb86fc;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.form-group input:focus {
+    outline: 2px solid #bb86fc;
+}
+
+button {
+    background-color: #bb86fc;
+    color: #121212;
+    font-weight: 600;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #9b59b6;
+}
+
+/* ======== TABLE ======== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #151515;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.2);
+}
+
+th,
+td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+th {
+    background-color: #2a2a2a;
+    color: #bb86fc;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #222;
+}
+
+.actions button {
+    margin: 2px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #b00020;
+    color: white;
+}
+
+/* ======== FOOTER ======== */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 600px) {
+
+    table,
+    th,
+    td {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
